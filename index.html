@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peaceful Atom</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.9.2/confetti.browser.min.js"></script>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0b3d91">
+</head>
+<body>
+  <div id="progress-bar"></div>
+
+  <header>
+    <div class="logo">⚛️</div>
+    <h1 id="typed-title"></h1>
+    <p>Exploring the positive uses of nuclear technology</p>
+    <p class="credit">By God'sable K Isaac</p>
+    <p id="read-time">⏱️ Estimated read time: calculating...</p>
+    <img src="Isaac.jpg" alt="God'sable K Isaac with x-ray equipment" id="profile-pic">
+    <button id="theme-toggle">🌙 Dark Mode</button>
+  </header>
+<div id="fact-ticker">
+    💡 Did you know? <span id="fact-text">Loading fact...</span>
+  </div>
+  <nav>
+    <a href="#intro">Intro</a>
+    <a href="#history">History</a>
+    <a href="#energy">Energy</a>
+    <a href="#agriculture">Agriculture</a>
+    <a href="#industry">Industry</a>
+    <a href="#medicine">Medicine</a>
+    <a href="#safety">Safety</a>
+    <a href="#environment">Environment</a>
+    <a href="#misconceptions">Misconceptions</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#funzone">Funzone</a>
+    <a href="#conclusion">Conclusion</a>
+  </nav>
+  <div id="search-box">
+    <input type="text" id="search-input" placeholder="🔍 Search a topic (e.g. medicine, safety)...">
+    <div id="search-results"></div>
+  </div>
+
+  <main>
+    <section id="intro">
+      <h2>👋 What is Nuclear Technology?</h2>
+      <p>
+        When people hear the word "nuclear," they often think of danger or weapons.
+        But nuclear technology is really just about understanding and using the energy
+        stored inside tiny atoms — the building blocks of everything around us.
+      </p>
+      <p>
+        Just like fire can cook your food or burn down a house depending on how it's used,
+        nuclear science can be used carefully and responsibly to help people. Today, it
+        plays a quiet but powerful role in our everyday lives — helping doctors diagnose
+        illnesses, generating clean electricity, protecting crops, and even preserving
+        food for longer.
+      </p>
+      <p>
+        This app, <strong>Peaceful Atom</strong>, was created to show the other side of
+        nuclear technology — the side that heals, powers, and protects — so you can
+        separate fear from facts and understand the real story behind the atom. ⚛️
+      </p>
+    </section>
+    <section id="stats">
+      <div class="stat-box">
+        <span class="stat-number" data-target="70">0</span>
+        <p>Years of Peaceful Nuclear Use</p>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" data-target="100">0</span>
+        <p>+ Countries Using Nuclear Medicine</p>
+      </div>
+      <div class="stat-box">
+        <span class="stat-number" data-target="10000000">0</span>
+        <p>+ Patients Helped Yearly</p>
+      </div>
+    </section>
+    <section id="topic-grid">
+      <h2>🗂️ Explore Topics</h2>
+      <div class="grid">
+        <a href="#medicine" class="card">🏥<span>Medicine</span></a>
+        <a href="#energy" class="card">⚡<span>Energy</span></a>
+        <a href="#agriculture" class="card">🌱<span>Agriculture</span></a>
+        <a href="#industry" class="card">🏭<span>Industry</span></a>
+        <a href="#history" class="card">📜<span>History</span></a>
+        <a href="#safety" class="card">🛡️<span>Safety</span></a>
+        <a href="#environment" class="card">🌳<span>Environment</span></a>
+        <a href="#quiz" class="card">🧠<span>Quiz</span></a>
+        <a href="#glossary">Glossary</a>
+        <a href="#sources">Sources</a>
+      </div>
+    </section>
+    <section id="medicine">
+      <h2>🏥 Medicine</h2>
+      <p>Nuclear technology helps diagnose and treat diseases. For example, Tc-99m is used in imaging to see how organs are functioning, helping doctors detect problems early.</p>
+    </section>
+
+    <section id="energy">
+      <h2>⚡ Energy</h2>
+      <p>Nuclear power plants generate large amounts of electricity without burning fossil fuels, producing far less carbon dioxide than coal or gas plants.</p>
+    </section>
+
+    <section id="agriculture">
+      <h2>🌱 Agriculture</h2>
+      <p>Radiation is used to control pests, preserve food longer, and develop better crop varieties — helping farmers and reducing food waste.</p>
+    </section>
+
+    <section id="industry">
+      <h2>🏭 Industry</h2>
+      <p>Industrial radiography uses radiation to inspect welds, pipelines, and structures for defects without taking them apart — keeping infrastructure safe.</p>
+    </section>
+
+    <section id="history">
+      <h2>📜 History</h2>
+      <p>Since the "Atoms for Peace" initiative in the 1950s, countries worldwide have used nuclear science for healthcare, energy, and research — not just weapons.</p>
+      <p>Nuclear technology has many positive uses in the world today.</p>
+    </section>
+
+    <section id="safety">
+      <h2>🛡️ Safety</h2>
+      <p>Radiation use is carefully controlled using principles like ALARA (As Low As Reasonably Achievable) to protect workers, patients, and the public.</p>
+    </section>
+    <section id="environment">
+      <h2>🌳 Environment</h2>
+      <p>
+        Nuclear technology also plays a quiet role in protecting our environment.
+        Scientists use radioactive tracers to study water pollution, track how
+        pollutants move through rivers and soil, and monitor climate change by
+        analyzing ice cores and ocean sediments.
+      </p>
+      <p>
+        Nuclear power itself produces electricity without releasing carbon dioxide
+        or air pollutants during operation — making it one of the lowest-carbon
+        energy sources available, helping fight climate change alongside solar and wind.
+      </p>
+      <p>
+        Isotope techniques are even used to study and protect endangered wildlife,
+        helping researchers understand animal migration and population health
+        without causing harm.
+      </p>
+    </section>
+    <section id="misconceptions">
+      <h2>💭 Common Misconceptions vs Reality</h2>
+
+      <p><strong>Misconception:</strong> "Anything nuclear is dangerous and will hurt me."</p>
+      <p><strong>Reality:</strong> Like electricity or fire, nuclear technology is only dangerous when mishandled. Used correctly — as it is in hospitals, power plants, and labs — it's carefully controlled and monitored to keep people safe.</p>
+
+      <p><strong>Misconception:</strong> "Nuclear technology only means bombs."</p>
+      <p><strong>Reality:</strong> Most nuclear technology in the world today has nothing to do with weapons. It quietly powers homes, treats cancer patients, helps farmers grow better crops, and even sterilizes medical equipment.</p>
+
+      <p><strong>Misconception:</strong> "If I'm near nuclear equipment, I'll become radioactive."</p>
+      <p><strong>Reality:</strong> Being near a properly shielded source doesn't make a person radioactive, the same way standing near a lit candle doesn't make you catch fire. Radiation protection rules exist precisely to keep exposure safe and minimal.</p>
+
+      <p><strong>Misconception:</strong> "Nuclear power plants pollute the air like coal plants."</p>
+      <p><strong>Reality:</strong> Nuclear power plants don't burn fuel the way coal or gas plants do, so they don't release smoke or carbon dioxide while generating electricity — making them one of the cleanest large-scale power sources available.</p>
+
+      <p><strong>Misconception:</strong> "Only scientists in big countries use nuclear technology."</p>
+      <p><strong>Reality:</strong> Many countries, including Tanzania, use nuclear science in everyday ways — from hospital diagnostics to agricultural research — often through organizations like the IAEA that support peaceful nuclear development worldwide.</p>
+
+      <p>
+        At the end of the day, fear often comes from not understanding something — not
+        from the thing itself. The goal of <strong>Peaceful Atom</strong> is simple:
+        replace fear with facts, one myth at a time.
+      </p>
+    </section>
+    <section id="quote-banner">
+      <p>"Knowledge dispels fear. The more we understand, the less we have to be afraid of."</p>
+    </section>
+    <section id="everyday-radiation">
+      <h2>📡 Radiation in Everyday Life</h2>
+      <p>
+        Radiation isn't some rare, alien thing locked away in labs — it's part of the
+        natural world around you, every single day. Here are a few ordinary sources
+        of radiation you've probably encountered without even noticing:
+      </p>
+      <ul>
+        <li>🍌 <strong>Bananas</strong> — contain a tiny amount of natural potassium-40</li>
+        <li>✈️ <strong>Airplane flights</strong> — you receive a bit more cosmic radiation at high altitude</li>
+        <li>🧱 <strong>Bricks and granite</strong> — building materials contain trace natural radioactivity</li>
+        <li>🦷 <strong>Dental and medical X-rays</strong> — a small, controlled dose used to see inside the body</li>
+        <li>☀️ <strong>Sunlight</strong> — the sun itself emits radiation, including the UV rays that tan or burn your skin</li>
+      </ul>
+      <p>
+        The key isn't "radiation = danger." It's about <strong>dose and control</strong>.
+        A small, controlled amount is part of normal life. Nuclear technology simply
+        works with these same principles, in carefully measured and monitored ways.
+      </p>
+    </section>
+    <section id="accidents">
+      <h2>⚠️ An Honest Look: What About Chernobyl and Fukushima?</h2>
+      <p>
+        It wouldn't be honest to talk about nuclear technology without addressing the
+        accidents people often think of first — Chernobyl (1986) and Fukushima (2011).
+        Pretending they didn't happen would only fuel more distrust.
+      </p>
+      <p>
+        <strong>Chernobyl</strong> happened due to a combination of a flawed reactor
+        design and serious human error during a test, with no proper containment
+        structure to stop the spread of radioactive material once things went wrong.
+      </p>
+      <p>
+        <strong>Fukushima</strong> was triggered by a massive earthquake and tsunami
+        that disabled the plant's cooling systems — an extreme natural disaster, not
+        a design flaw in the nuclear reaction itself.
+      </p>
+      <p>
+        Since both events, the global nuclear industry has made major changes: stronger
+        containment structures, better emergency systems, independent safety inspections,
+        and stricter international oversight through bodies like the IAEA. Modern reactor
+        designs are built with multiple layers of backup safety systems specifically to
+        prevent these situations from repeating.
+      </p>
+      <p>
+        Acknowledging the past honestly — and showing what's been learned from it — is
+        part of understanding nuclear technology responsibly, not blindly defending it.
+      </p>
+    </section>
+    <section id="faq">
+      <h2>❓ Frequently Asked Questions</h2>
+
+      <p><strong>Is nuclear waste a huge problem?</strong></p>
+      <p>Nuclear waste is a real issue, but it's also a small-volume one compared to other industries, and it's tightly regulated, stored, and monitored — unlike, for example, the constant emissions from fossil fuel plants.</p>
+
+      <p><strong>Can a nuclear power plant explode like a bomb?</strong></p>
+      <p>No. A reactor and a bomb work completely differently — a power plant cannot achieve the kind of explosive chain reaction a weapon is specifically engineered to produce.</p>
+
+      <p><strong>Is it safe to live near a nuclear power plant?</strong></p>
+      <p>Yes, generally. Nuclear plants are among the most heavily regulated and monitored facilities in the world, with continuous safety checks and strict radiation limits.</p>
+
+      <p><strong>Why don't we hear more positive nuclear stories?</strong></p>
+      <p>Good news rarely makes headlines the way disasters do. Quiet, everyday uses — like cancer treatment or crop improvement — don't generate dramatic news stories, even though they happen far more often than accidents.</p>
+    </section>
+    <section id="glossary">
+      <h2>📖 Glossary of Key Terms</h2>
+
+      <p><strong>Atom</strong> — the tiny basic building block of all matter, made up of a nucleus (protons and neutrons) surrounded by electrons.</p>
+
+      <p><strong>Isotope</strong> — a version of an element with the same number of protons but a different number of neutrons; some isotopes are radioactive, others are not.</p>
+
+      <p><strong>Radiation</strong> — energy released from atoms, either as particles or waves; it can occur naturally or be produced by human technology.</p>
+
+      <p><strong>Half-life</strong> — the time it takes for half of a radioactive substance to decay into a more stable form; half-lives can range from seconds to billions of years.</p>
+
+      <p><strong>ALARA</strong> — short for "As Low As Reasonably Achievable," a safety principle used to keep radiation exposure as low as possible in any nuclear-related work.</p>
+
+      <p><strong>Becquerel (Bq)</strong> — the standard unit used to measure radioactivity, representing one radioactive decay per second.</p>
+
+      <p><strong>Nuclear fission</strong> — splitting the nucleus of an atom into smaller parts, releasing energy; this is the process used in nuclear power plants.</p>
+
+      <p><strong>Nuclear fusion</strong> — combining two small atomic nuclei into one larger nucleus, releasing energy; this is the process that powers the sun.</p>
+
+      <p><strong>Radioisotope</strong> — a radioactive form of an element, often used in medicine, industry, or research because of how it decays.</p>
+
+      <p><strong>Containment</strong> — the physical barriers and structures designed to keep radioactive material safely contained within a facility.</p>
+    </section>
+    <section id="quiz">
+      <h2>🧠 Myth or Fact?</h2>
+      <div id="quiz-box">
+        <p id="quiz-question">Loading question...</p>
+        <button onclick="answerQuiz(true)">Fact</button>
+        <button onclick="answerQuiz(false)">Myth</button>
+        <p id="quiz-feedback"></p>
+        <button id="next-btn" onclick="nextQuestion()" style="display:none;">Next Question</button>
+        <p id="quiz-score"></p>
+      </div>
+    </section><section id="funzone">
+      <h2>😂 Fun Zone</h2>
+      <div id="fun-box">
+        <p id="fun-question">Loading question...</p>
+        <button onclick="answerFun(true)">True</button>
+        <button onclick="answerFun(false)">False</button>
+        <p id="fun-feedback"></p>
+        <button id="fun-next-btn" onclick="nextFunQuestion()" style="display:none;">Next Question</button>
+        <p id="fun-score"></p>
+      </div>
+    </section>
+    <section id="certificate-section">
+      <h2>🏅 Get Your Certificate</h2>
+      <p>Score well on both quizzes to unlock your Peaceful Atom certificate!</p>
+      <div id="certificate" style="display:none;">
+        <h3>⚛️ Certificate of Understanding</h3>
+        <p>This certifies that</p>
+        <p class="cert-name">A Peaceful Atom Learner</p>
+        <p>has successfully learned the peaceful uses of nuclear technology.</p>
+        <p>— Peaceful Atom by God'sable K Isaac</p>
+      </div>
+    </section>
+    <section id="sources">
+      <h2>📚 Sources & Further Reading</h2>
+      <p>
+        The information in this app is inspired by publicly available knowledge from
+        recognized nuclear science organizations, including the International Atomic
+        Energy Agency (IAEA) and national bodies such as the Tanzania Atomic Energy
+        Commission (TAEC), as well as general academic nuclear physics education.
+      </p>
+      <p>
+        This app is intended for general public education and awareness, not as a
+        substitute for professional, medical, or regulatory guidance. For official
+        and detailed information, visit <strong>iaea.org</strong> or your country's
+        national nuclear regulatory authority.
+      </p>
+    </section>
+    <section id="conclusion">
+      <h2>🌍 Final Thoughts</h2>
+      <p>
+        Nuclear technology is not something to fear blindly, nor something to use carelessly.
+        Like any powerful tool, it deserves respect, understanding, and responsibility.
+        The same atom that can cause harm in the wrong hands has also saved countless lives
+        through medicine, lit up homes through clean energy, and protected crops that feed
+        families across the world.
+      </p>
+      <p>
+        The difference is not the atom itself — it's the knowledge, intention, and safety
+        behind how it's used. That's the real lesson of the "Peaceful Atom."
+      </p>
+      <p>
+        So next time someone mentions nuclear technology, pause before reacting with fear.
+        Ask questions. Look for facts. Share what you've learned here with a friend or
+        classmate. The more people understand, the less room there is for myths to spread —
+        and the more we can appreciate science as a tool for good.
+      </p>
+      <p><strong>Stay curious, stay informed, and help others see the atom for what it truly can be — a force for peace.</strong></p>
+    </section>
+  </main>
+
+  <section id="share">
+      <h2>📢 Help Spread the Facts</h2>
+      <p>
+        Misunderstanding fuels fear, and fear spreads faster than facts. If this app
+        helped you see nuclear technology differently, share it with a friend,
+        classmate, or family member — every person who learns the truth is one less
+        person spreading a myth.
+      </p>
+      <p><strong>Share this link:</strong></p>
+      <p id="share-link">https://able2741.github.io/Atom-for-peace/</p>;
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Peaceful Atom</p>
+    <p>Created by God'sable K Isaac</p>
+  </footer>
+
+  <button id="back-to-top">⬆️</button>
+  <button id="print-btn" onclick="window.print()">🖨️ Save / Print</button>
+  <script src="script.js"></script>
+</body>
+</html>
